@@ -9,3 +9,9 @@ body {
   max-width: 48rem;
   margin: auto;
 }
+
+.vcenter{
+  display: flex;
+  gap: .5em;
+  align-items: center;
+}
