@@ -10,7 +10,14 @@ body {
   margin: auto;
 }
 
-.vcenter{
+.banner {
+  margin-block: .67em;
+
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.vcenter {
   display: flex;
   gap: .5em;
   align-items: center;

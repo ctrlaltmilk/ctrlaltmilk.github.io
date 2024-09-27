@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="/favicon.png">
+
+  <script defer src="/tablegen/tablegen.js"></script>
+
+  <title>tablegen</title>
+</head>
+<body>
+  <a href="/" class="banner vcenter"><img src="/favicon.png" alt="icon"></img>ctrlaltmilk's webspace :3</a>
+
+  <main>
+    <h1>tablegen</h1>
+    <h2>notes:</h2>
+    <ul>
+      <li>all trig functions use <a href="https://en.wikipedia.org/wiki/Binary_angular_measurement">binary angular measurements</a>, where 0x00 is 0°, 0x40 is 90°, 0x80 is 180°, etc.</li>
+      <li>all outputs are in signed binary fractions of 128, clipped to the range [-128, 127].</li>
+      <li>outputs are formatted in hex, with the prefix specified in the form.</li>
+    </ul>
+    <form id="form">
+      <label for="function">Function:</label>
+      <select id="function">
+        <option value="sin">Sine</option>
+        <option value="cos">Cosine</option>
+        <option value="tan">Tangent</option>
+        <option value="invsqrt">Inverse Square Root</option>
+        <option value="recip">Reciprocal</option>
+      </select>
+      <br>
+      <label for="prefix">Number prefix:</label>
+      <select id="prefix">
+        <option value="">No prefix (uxn)</option>
+        <option value="$">$ (ASM)</option>
+        <option value="0x">0x (C)</option>
+      </select>
+      <br>
+      <label for="count">Table size:</label>
+      <input id="count" type="number" value="256">
+    </form>
+    <pre><code id="output">
+    </code></pre>
+  </main>
+</body>
+</html>
