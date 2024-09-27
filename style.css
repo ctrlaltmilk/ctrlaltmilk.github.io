@@ -3,6 +3,7 @@ html, body {
   padding: 0;
 
   font-family: sans-serif;
+  image-rendering: pixelated;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
 }
 
 .banner {
-  margin-block: .67em;
+  margin-block: .65625em;
 
   font-size: 2em;
   font-weight: bold;
